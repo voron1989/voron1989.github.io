@@ -1,102 +1,93 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            
-            body {
-                margin: 0;
-                height:100%;
-                background: #222222;
-                padding-left: 330px;
-                font-family: tahoma;
-            }
-            .box-left {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 300px;
-                height: 100%;
-                font-size: 18px;
-                color: #f9f9f9;
-            }
-            .box-left-inner{
-                padding: 50px 15px
-            }
-            
-            .box-main {
-                width: 100%;
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Вёрстка веб-страниц</title>
+
+    <!-- Bootstrap -->
+    <link href="js/bootstrap.min.js" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body> 
+        <!-- header -->
+        <header >
+            <div class="container">
+                <h1>Вёрстка web-страниц</h1>    
+            </div>    
+        </header>
+        
+        <!-- Gallery -->
+        <main>
+            <div class="container">
+                <h2>Примеры моих работ</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <article>
+                            <a href="#">
+                                <img src="img/img.jpg" alt="альтернативный текст">
+                                <h3>Сайт 1</h3>
+                            </a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <article>
+                            <a href="#">
+                                <img src="img/img.jpg" alt="альтернативный текст">
+                                <h3>Сайт 2</h3>
+                            </a>
+                        </article>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <article>
+                            <a href="#">
+                                <img src="img/img.jpg" alt="альтернативный текст">
+                                <h3>Сайт 3</h3>
+                            </a>
+                        </article>
+                    </div>
+                    
+                  
+                    
+                </div>
+            </div>
+        </main>
+        
+        <!-- foter -->
+        
+        <footer>
+            <div class="container">
+                <h2> Воронков Сергей </h2>
                 
-            }
-            .content {
-                width:100%;
-                background-color: white;
-                border-radius: 6px;
-                padding-top: 10px;
-                text-align: center;
-            }
-            
-            .content .item-box {
-                margin: 10px;
-                display: inline-block;
-                -moz-box-shadow: 0 0 5px 5px #888;
-                -webkit-box-shadow: 0 0 5px 5px#888;
-                box-shadow: 0 0 5px 5px #888;
-
-            }
-            .content .item-box .item-image { height: 322px; line-height: 322px; background-color: #f3f3f3; }
-            .content .item-box .item-image img { vertical-align: middle; }
-            
-            .clearfix { clear: both; }
-            
-        </style>
-    </head>
-    <body>
-        <div class="box-left">
-            <div class="box-left-inner">
-                <strong>Воронков Сергей</strong>
-
-                <p>voronkov.sergey1989@gmail.com<br>
-                Skype: voronkov.sergey1989</p>
-            
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpENEVEMkM1ODJGRUUxMUU2OThCMjg3Mjc3RTMzOEM3MiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpENEVEMkM1OTJGRUUxMUU2OThCMjg3Mjc3RTMzOEM3MiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQ0RUQyQzU2MkZFRTExRTY5OEIyODcyNzdFMzM4QzcyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQ0RUQyQzU3MkZFRTExRTY5OEIyODcyNzdFMzM4QzcyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+SERVuwAABlFJREFUeNrEV2tsVEUU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" alt="E-mail">
+                    <h3>voronkov.sergey1989@gmail.com</h3>
+                </div>
+                    
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpjMmU2MmEwNC1hNDdkLTg1NDMtOWQwZi04MzRiYzk0ZmQ1ZTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODkzMDhGM0MyRkVFMTFFNjg5RTNFRDY1RDA5NEQwMTkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODkzMDhGM0IyRkVFMTFFNjg5RTNFRDY1RDA5NEQwMTkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MjdhNjMxLWE0ZDEtMmY0Ny05ZDU0LTY0MzJiMTU4OTU1MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpjMmU2MmEwNC1hNDdkLTg1NDMtOWQwZi04MzRiYzk0ZmQ1ZTUiLz4gPC9y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" alt="Skype">
+                    <h3>voronkov.sergey1989</h3>
+                </div>
             </div>
-        </div>
-        <div class="box-main">
-            <div class="content">
-                <div class="item-box">
-                    <div class="item-image">
-                        <a href="/6/"><img src="/images/preview/6.jpeg"></a>
-                    </div>
-                    <p>Админка на Bootstrap.</p>
-                </div>
-                <div class="item-box">
-                    <div class="item-image">
-                        <a href="/7/"><img src="/images/preview/7.jpeg"></a>
-                    </div>
-                    <p>Одна из моих тестовых страниц.</p>
-                </div>
-                <div class="item-box">
-                    <div class="item-image">
-                        <a href="/8/"><img src="/images/preview/8.jpeg"></a>
-                    </div>
-                    <p>Двухуровневое меню на CSS.</p>
-                </div>
-                <div class="item-box">
-                    <div class="item-image">
-                        <a href="/11/"><img src="/images/preview/11.jpeg"></a>
-                    </div>
-                    <p>Макет сайта (5 страниц) для котов.</p>
-                </div>
-                <div class="item-box">
-                    <div class="item-image">
-                        <a href="/10/"><img src="/images/preview/10.jpeg"></a>
-                    </div>
-                    <p>Макет сайта (5 страниц).</p>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
+        </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
