@@ -1,0 +1,529 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="HTML5, CSS, JavaScript, jQuery">
+	<title>Zipo-shop</title>
+	
+	<!-- https://developers.google.com/speed/libraries/ -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	
+	<!--- ================
+			slider 
+	===================--->
+	
+	<!-- bxSlider Javascript file -->
+	<script src="js/bx/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="js/bx/jquery.bxslider.css" rel="stylesheet" />
+
+	<script type="text/javascript">
+		// Инициализация слайдера
+		$(document).ready(function(){
+			$('.top-slider').bxSlider({
+				pager: false,
+				responsive: false,
+			});
+			$(window).resize(function(){
+				$('.top-slider').bxSlider().reloadSlider();
+			});
+			
+			
+		});
+	</script>
+	
+	<style>
+		/* Фикс стилей слайдера */
+		.top-slider { margin: 0; }
+		.top-slider>div { height: 100px; overflow: hidden; background-color: red;}
+		.top-slider-wrapper { max-width: 1192px; margin: 0 auto; }
+		.bx-wrapper .bx-viewport { border:none; left: 0; }
+		
+		
+		.gallery-slider{width: 100%;}
+	</style>
+	
+	<script type="text/javascript">
+		// Инициализация слайдера
+		$(document).ready(function(){
+			$('.gallery-slider').bxSlider({
+				pager: false,
+				responsive: false,
+			});
+			$(window).resize(function(){
+				$('.gallery-slider').bxSlider().reloadSlider();
+			});
+		});
+	</script>
+	
+	<!--- end slider -->
+	
+	<link href="css/fontello.css" type="text/css" rel="stylesheet">  
+	<link href="css/style.css" type="text/css" rel="stylesheet">  
+	<link href="css/media.css" rel="stylesheet" type="text/css">
+	
+</head>
+<body>
+
+	<!--===========================
+			header
+	============================-->
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+				<!-- header left -->
+				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+					<img src="images/logo.png" alt="">
+					<form>
+						<img src="images/search.png" alt="">
+						<input type="text" name="test">
+						<button type="submit">Поиск</button>
+					</form>
+					
+					<div class="basket">
+						<p>КОРЗИНА</p><img src="images/hed-2.png" alt="">
+					</div>
+				</div>	
+				<!-- header right -->	
+				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">	
+					<div class="nav-top">
+                                            <ul>
+						<li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
+						<li><a href="#">ГАРАНТИЯ</a></li>
+						<li><a href="#">НОВОСТИ И АКЦИИ</a></li>
+						<li><a href="#">КОНТАКТЫ</a></li>
+                                            </ul>
+					</div>
+					
+					<!-- mobile-menu -->
+					<div class="btn-group">
+					
+						<button id="btn-memu" type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="icon-menu"></span> МЕНЮ</button>
+				  
+						<ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">ГАРАНТИЯ</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">НОВОСТИ И АКЦИИ</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">КОНТАКТЫ</a></li>
+						</ul>
+					</div>
+					<!-- / mobile-menu -->
+				</div>	
+			</div>
+		</div>
+	</header>
+	
+	<!--===========================
+			slider
+	============================-->
+	
+	<div class="top-slider-wrapper">
+		<div class="top-slider">
+			<!--  slider-box 1  -->
+			<div id="slider-box1">
+				<img class="slider-img" src="images/s-img-1.png" alt="">
+				<div class="slider-box-right">
+					<div class="sbr-box1">
+						<p>(050) 000-00-00</p>
+						<span>zipo-shop@gmail.com</span>
+					</div>
+					<div class="sbr-box2">
+						<p>Зажигалки и аксесуары</p>
+						<h1>ZIPPO</h1>
+					</div>
+					<div class="sbr-box3">
+						<div class="sbr-box3-1">
+							<p>Страна производитель:</P>
+							<h3>США</h3>
+						</div>
+						<div class="sbr-box3-2">
+							<p>Год основания:</P>
+							<h3>1932</h3>
+						</div>
+						<div class="sbr-box3-3">
+							<p>Количество товаров:</P>
+							<h3>65</h3>
+						</div>
+					</div>
+					<div class="sbr-box4">
+						<p>США с быстрой доставкой по Киеву и ВСЕЙ <br>Украине</p>
+					</div>	
+				</div>
+			
+				<div class="slider-buy-box">
+					<a class="slider-buy" href="#">КУПИТЬ</a>
+					<p>Комплект: зажигалка + чехол <br> Zippo 28459 CONFUCIUS SAY TOILET</p>
+					<span>500<span class="price">грн</span></span>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<!--  slider-box 2  -->
+			<div id="slider-box2">
+				<img class="slider-img" src="images/s-img-2.png" alt="">
+				<div class="slider-box-right">
+					<div class="sbr-box1">
+						<p>(050) 000-00-00</p>
+						<span>zipo-shop@gmail.com<span>
+					</div>
+					<div class="sbr-box2">
+						<p>Зажигалки и аксесуары</p>
+						<h1>ZIPPO</h1>
+					</div>
+					<div class="sbr-box3">
+						<div class="sbr-box3-1">
+							<p>Страна производитель:</P>
+							<h3>США</h3>
+						</div>
+						<div class="sbr-box3-2">
+							<p>Год основания:</P>
+							<h3>1932</h3>
+						</div>
+						<div class="sbr-box3-3">
+							<p>Количество товаров:</P>
+							<h3>65</h3>
+						</div>
+					</div>
+					<div class="sbr-box4">
+						<p>США с быстрой доставкой по Киеву и ВСЕЙ <br>Украине</p>
+					</div>	
+				</div>
+			
+				<div class="slider-buy-box">
+					<a class="slider-buy" href="#">КУПИТЬ</a>
+					<p>Комплект: зажигалка + чехол <br> Zippo 28459 CONFUCIUS SAY TOILET</p>
+					<span>500<span class="price">грн</span></span>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+			<!--  slider-box 3  -->
+			<div id="slider-box3">
+				<img class="slider-img" src="images/s-img-3.png" alt="">
+				<div class="slider-box-right">
+					<div class="sbr-box1">
+						<p>(050) 000-00-00</p>
+						<span>zipo-shop@gmail.com<span>
+					</div>
+					<div class="sbr-box2">
+						<p>Зажигалки и аксесуары</p>
+						<h1>ZIPPO</h1>
+					</div>
+					<div class="sbr-box3">
+						<div class="sbr-box3-1">
+							<p>Страна производитель:</P>
+							<h3>США</h3>
+						</div>
+						<div class="sbr-box3-2">
+							<p>Год основания:</P>
+							<h3>1932</h3>
+						</div>
+						<div class="sbr-box3-3">
+							<p>Количество товаров:</P>
+							<h3>65</h3>
+						</div>
+					</div>
+					<div class="sbr-box4">
+						<p>США с быстрой доставкой по Киеву и ВСЕЙ <br>Украине</p>
+					</div>	
+				</div>
+			
+				<div class="slider-buy-box">
+					<a class="slider-buy" href="#">КУПИТЬ</a>
+					<p>Комплект: зажигалка + чехол <br> Zippo 28459 CONFUCIUS SAY TOILET</p>
+					<span>500<span class="price">грн</span></span>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--===========================
+			content
+	============================-->
+	
+	<div class="container">
+            <div class="row">
+		<!-- navigation content -->
+		<div id="nav-content">
+                    <ul>
+			<li><img src="images/nav-img-1.png" alt=""><a href="#">Газовые зажигалки</a></li>
+			<li><img src="images/nav-img-2.png" alt=""><a href="#">Бензиновые зажигалки </a></li>
+			<li><img src="images/nav-img-3.png" alt=""><a href="#"> Аксессуары </a></li>
+			<li><img src="images/nav-img-4.png" alt=""><a href="#">Топливо  </a></li>
+			<li><img src="images/nav-img-5.png" alt=""><a href="#">Грелки для рук </a></li>
+			<li><img src="images/nav-img-6.png" alt=""><a href="#">Зажигалки для дома</a></li>
+                    </ul>
+                </div>
+			
+            </div>
+		
+		<div class="row">
+                    <div class="title"> 
+			<h2>О нас</h2>
+			<p><strong>Зажигалки Zippo</strong>— это знаменитые ветрозащитные 	зажигалки с пожизненной гарантией. <br>Уже 79 лет Zippo производит зажигалки, которые известны во всем мире. Эти зажигалки широко известны как престижный аксессуар и предмет коллекционирования: около 70-80% всех зажигалок Zippo покупается в подарок. </p>
+                    </div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<!-- gallery -->
+			<div class="gallery">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 1 -->
+						<img src="images/img-1.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 1 -->
+						<img src="images/img-2.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				
+				<!-- news -->
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="news-bow">
+						<div class="news-bow-inner">
+							<div class="news-header"> 
+								<p><h2><img src="images/news-title.png" alt="">Новости и Акции</h2></p>
+							</div>
+							
+							<div class="img">
+								<img src="images/news.jpg" alt="">
+							</div>
+							
+							<div class="caption-news"> 	
+								<p>Дополнительный текст описания новости или акции. Эти зажигалки 
+									широко известны как престижный аксессуар и предмет 
+									коллекционирования: около 70-80% всех зажигалок Zippo
+								</p>
+								<a href="#">Подробнее...</a>
+								<div class="clearfix"></div>
+								
+								<div class="news-absolute">
+									<h2>НАЗВАНИЕ АКЦИИ</h2>
+									<p>Акция действует до 22.08.2015</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- end news -->
+	
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 3 -->
+						<img src="images/img-3.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 4 -->
+						<img src="images/img-4.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 5 -->
+						<img src="images/img-5.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="discount">
+							<p>Лучшая цена!</p>
+						</div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 6 -->
+						<img src="images/img-6.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="discount">
+							<p>Новый товар</p>
+						</div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 7 -->
+						<img src="images/img-7.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="discount">
+							<p>Poспродажа</p>
+						</div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 8 -->
+						<img src="images/img-8.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="discount">
+							<p>Акция!</p>
+						</div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 9 -->
+						<img src="images/img-9.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 10 -->
+						<img src="images/img-10.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 11 -->
+						<img src="images/img-11.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="gallery-inner"><!-- 12 -->
+						<img src="images/img-12.jpg" alt="">
+						<div class="buy-box"><a class="buy" href="#">КУПИТЬ</a></div>
+						<div class="caption"> 
+							<p>Зажигалка</p>
+							<p>Zippo 28459 CONFUCIUS SAY</p> 
+							<p>TOILET</p>
+							<span>500<span class="price">грн</span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="clearfix"></div>
+			
+			<div class="btm-gallery-box">
+				<a class="btm-gallery" href="#">Показать больше</a>
+			</div>
+			
+		</div>
+	</div>
+
+	<!--===========================
+			footer
+	============================-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-6">
+					<p>Copyright © 2015. Все права защищены.</p>
+				</div>
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
+					
+					<!-- social -->
+					<div class="social">
+						<div class="facebook">
+							<a href="#" class="facebook2"><i class="icon-facebook"></i></a>
+						</div>
+						<div class="instagram">
+							<a class="instagram2" href="#"><i class="icon-instagram"></i></a>
+						</div>
+						<div class="twitter">
+							<a href="#" class="twitter2"><i class="icon-twitter"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</footer>
+
+</body>
+</html>

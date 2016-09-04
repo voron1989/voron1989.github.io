@@ -1,0 +1,23 @@
+
+@media (max-width: 620px) {
+	.nav-top{display: none;} 
+	#btn-memu{display: inline-block;}
+	#menu{display: none;}
+	header form{
+		margin-top: 17px;
+		margin-left: 50px;}
+	.slider-buy-box{display:none;}
+}
+
+@media (min-width: 620px) and (max-width: 1200px){
+	.basket{padding-right: 25px;}
+}
+
+@media (max-width: 1000px) {
+	.slider-box-right{display: none}
+	.slider-buy-box .slider-buy{}
+	#slider-box1 .slider-img{display:block; margin: 0 auto;}
+	#slider-box2 .slider-img{display:block; margin: 0 auto;}
+	#slider-box3 .slider-img{display:block; margin: 0 auto;}
+}
+
